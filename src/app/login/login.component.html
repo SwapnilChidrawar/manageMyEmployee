@@ -11,7 +11,10 @@
   </mat-form-field>
 
   <div class="example-button-row">
-    <button mat-raised-button color="warn">Cancel</button>
-    <button mat-raised-button color="primary">Login</button>
+    <button mat-raised-button color="warn" (click)="cancelLogin()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="loginUser()" [disabled]="showProgressSpinner">Login</button>
+    <div class="mat-spinner-icon" *ngIf="showProgressSpinner"> 
+        <mat-spinner [diameter]="25"></mat-spinner>
+    </div>
   </div>
 </div>

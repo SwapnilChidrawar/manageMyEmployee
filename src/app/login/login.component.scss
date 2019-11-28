@@ -8,6 +8,7 @@
     box-shadow: 2px 2px 2px 2px;
     padding: 10px;
     top: 120px;
+    height: 60%;
 
     .login-icon {
         text-align: center;
@@ -21,13 +22,15 @@
     }
 
     .example-button-row {
+        display: inherit;
         button {
             margin-right: 8px;
         }
     }
-  }
-  
-  .example-container > * {
-    width: 100%;
+
+    .mat-spinner-icon {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
   }
   

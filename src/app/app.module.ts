@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ResuableModule } from './resuable/resuable.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { ResuableModule } from './resuable/resuable.module';
     LoginComponent
   ],
   imports: [
-    ResuableModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatSliderModule,

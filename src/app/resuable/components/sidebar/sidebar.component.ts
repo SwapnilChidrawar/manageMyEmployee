@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  links: any[];
 
   constructor() { }
 
   ngOnInit() {
+    this.links = ['My Attendance', 'Apply For Leave', 'Leave Status'];
   }
 
 }
